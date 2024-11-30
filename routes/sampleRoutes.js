@@ -4,7 +4,7 @@ const db = require('../config/db');
 
 // Get all items (example route)
 router.get('/', (req, res) => {
-  db.query('SELECT * FROM sample_table', (err, results) => {
+  db.query('SELECT * FROM test', (err, results) => {
     if (err) {
       console.error(err);
       res.status(500).send('Server error');
